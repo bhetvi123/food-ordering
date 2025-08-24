@@ -1,0 +1,382 @@
+virtualdom  state hooks props propdriling context api reduxtoolkit 
+ part-1
+
+.js
+
+/* <div id="parent">
+    <div id="child">
+        <h1 id="heading">"hello react!! it's a react function"</h1>
+    </div>
+</div> */ 
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const parent = React.createElement(
+    "div", 
+    {id:"parent"},
+    React.createElement(
+        "div",
+        {id:"parents-child"},
+        [React.createElement(
+            "h1",
+            {id:"heading"},
+            "hello react!! it's a react h1 functionhello react!! it's a react h1 functionhello react!! it's a react h1 functionhello react!! it's a react h1 function",
+            ),
+        React.createElement(
+            "h2",
+            {id:"sibling"},
+            "hello react!! it's a react h2 function",
+            ),
+        ]
+    ),
+
+        React.createElement(
+        "div",
+        {id:"parents-child-2"},
+        [React.createElement(
+            "h1",
+            {id:"heading"},
+            "hello react!! it's a react h1 function",
+            ),
+        React.createElement(
+            "h2",
+            {id:"sibling"},
+            "hello react!! it's a react h2 function",
+            ),
+        ]
+    )
+);
+console.log(parent);//object
+const root =ReactDOM.createRoot(document.getElementById("root"))
+root.render(parent);
+
+
+.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>namaste react</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+    <div id="root"></div>
+<!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+<script type="module" src="./app.js">  
+</script>
+</body>
+</html>
+
+ part-2
+
+ ? what is npm?
+ >its does not stand node pacage manager
+    it called anythingcrazy name.its a standered repositry for all the packages.its biggest package manager.anyy package need to in project we use npm.all the pacakge hosted over there.all the library,utility we need come from npm.its manages that manages for our project.
+    when we create a basic react project or app its automatically has npm inside it .
+
+ ?how to make the projects use npm?
+ > npm init
+    package name: (namaste-react)
+version: (1.0.0)
+description: this is namaste react by hetvi barot
+entry point: (app.js)
+test command: jest
+git repository: (https://github.com/namastedev/namaste-react)
+keywords: react,namaste react,hetvi barot
+author: hetvi barot
+license: (ISC)
+type: (commonjs) react
+
+?package.json?
+>package.json is configration for npm.
+
+?why we need package.sjon?
+>its dependencys.our project is depend on a lots of packages those packages with the project is dependent on  is are the dependencys npm is manages of this.
+    most importante project is our project is bundler.
+    there are two packages 1.dev dependencysand another 2.is normal dependencys.
+    dev is required develepment.
+    normal is use in production.
+    npm install -D parcel
+
+? difference bettween pacake.json and package-lock.json?
+> package.json is there is a new verson relese it is stay like this.
+    psckage-lock.json is keep a track of exect version. its lokes the version and keeps a record of that.
+    you can recreate all the node modules
+
+?what os node_modules?
+>our projectneed dependency of parcal.now parcle has its own dependency.this is known as transative dependencys.
+
+?npx parcel index.html?
+>npm is we are just call npx means executing package.
+
+?parcel?
+>dev build
+>localserver
+>hmr-hot module rreplacementts
+>file watching algoridham -written in c++
+>caching - faster builds
+>image optimaizations
+>minification
+>bundlling
+>compress
+>consistent hashing
+>code spliting
+>differencal bundlling
+>error handaling
+>https
+>diagnostic
+>tree shaking-remove unuse code
+ 
+
+ part-3
+ run:
+ npx parsel index.html
+ npm run start or npm start -behind the seen execute the package parcelindex.html bcz we have configer this inside our package.json.
+
+ npm build
+ 1,
+ 
+jsx->jsx is not part of react.react also return without jsx.jsx is make developer life easy.jsx is convension they marge to html and css.
+jsx is not html inside javascript.jsx is html like syntex.but its html or xml like syntex.
+.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>namaste react</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+    <div id="root">
+        <h1>hetvi<h1></h1>
+    </div>
+<!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+<script type="module" src="./app.js">  
+</script>
+</body>
+</html>
+
+.js
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+//react element->just like dom element react react elements.
+// react.createlement-(is)-reactelement-jsobject-(render)-htmlelement
+const heading= React.createElement(
+    "h1",//element
+    {id:"heading"},//attributes
+    "namaste"//children of heading string text
+);//this element is not html element this is react element
+console.log(heading);
+
+//jsx-react.createelement-(is)-reactelement-jsobject-(render)-htmlelement
+//bebel is convert jsx to react element
+const jsxheading=(<h1 id="heading" className="head" tabIndex="1">
+hii
+</h1>);//jsx(transplied before it teach the js)-parcel-babel
+console.log(jsxheading);
+
+
+const root= ReactDOM.createRoot(document.getElementById("root"));//root for our react app.dom is for browser
+root.render(jsxheading);//it will replwce not append
+\
+
+2,
+
+// import React from "react";
+// import ReactDOM from "react-dom/client";
+
+// //react element->just like dom element react react elements.
+// // react.createlement-(is)-reactelement-jsobject-(render)-htmlelement
+// const heading= React.createElement(
+//     "h1",//element
+//     {id:"heading"},//attributes
+//     "namaste"//children of heading string text
+// );//this element is not html element this is react element
+// console.log(heading);
+
+// //jsx-react.createelement-(is)-reactelement-jsobject-(render)-htmlelement
+// //bebel is convert jsx to react element
+// const jsxheading=(<h1 id="heading" className="head" tabIndex="1">
+// hii
+// </h1>);//jsx(transplied before it teach the js)-parcel-babel
+// console.log(jsxheading);
+
+
+// const root= ReactDOM.createRoot(document.getElementById("root"));//root for our react app.dom is for browser
+// root.render(jsxheading);//it will replwce not append
+// class-2 
+import React from "react";
+import ReactDOM from "react-dom/client";
+//react element
+const jsxheading=(
+<h1 id="heading" className="head" tabIndex="1">
+the great
+</h1>);
+
+//react component:
+// 1.class baseed components-old
+// 2.functional components-new(most use)
+
+//react functional component(arrow function)
+const Headingcomponent = () => {
+    return <h1 tabIndex="5">hetvi</h1>
+};
+// its called compponent composition
+const Headingcomponent2 = () => (
+    <div id="container">  
+           <Headingcomponent /> 
+           <Headingcomponent></Headingcomponent>//we can also <Headingcomponent></Headingcomponent> right like this
+       {Headingcomponent()} //we can aso call like this    
+
+        {jsxheading} 
+     <h2>{100+200}</h2> //we can also add any javascripts method inside jsx
+     <h1>barot</h1>
+    </div>
+ 
+);
+const root= ReactDOM.createRoot(document.getElementById("root"));
+root.render( <Headingcomponent2 />);
+
+
+?part-4?
+>props are just normal arguments to a function.passing props to the components->take all this props and rap it inside an object and pass over here as props.
+
+?frontend system design?
+>confige?
+>all the ui is driven by the confige.
+code1: 
+craeate a different card using passing the props.
+ import React from "react";
+ import ReactDOM from "react-dom/client";
+
+const Header=() =>{
+    return(
+        <div className="header">
+            <div className="logo-container">
+                <img className="logo" src="https://img.freepik.com/premium-vector/food-logo-design-with-leaf-creative-concept-premium-vector_526458-2675.jpg?semt=ais_hybrid&w=740" />
+            </div>
+            <div className="nav-items">
+                <ul>
+                    <li>home</li>
+                    <li>aboutme</li>
+                    <li>contect us</li>
+                    <li>card</li>
+                </ul>
+            </div>
+        </div>
+    );
+};
+const stylecard={
+backgroundColor:"#733E48",
+};
+
+const Resturentcard= (props)=>{
+    console.log(props);
+    return(
+        <div className="res-card" style={stylecard}>
+        <img 
+        className="res-logo"
+        alt="res-logo"
+        src="https://images.unsplash.com/photo-1551024601-bec78aea704b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVsaWNpb3VzJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D"
+        />
+        <h3>{props.resname}</h3>
+        <h5>{props.cuisine}</h5>
+        <h5>{props.star}</h5>
+        <h5>{props.min}</h5>
+        </div>
+    );
+};
+
+
+const resobj={
+    
+}
+
+const Body= ()=>{
+    return(
+        <div className="body">
+            <button className="search"> search</button>
+            <div className="res-container">
+                <Resturentcard resname="Meghna Foods" cuisine="donuts" star=".4 stars" min="38minutes" />
+                <Resturentcard resname="om" cuisine="pizza" star=".4 stars" min="38minutes" />
+                <Resturentcard resname="narayana" cuisine="maggie" star=".3 stars" min="38minutes"/>
+                <Resturentcard resname="sankalp" cuisine="pasta" star=".2 stars" min="38minutes"/>
+                <Resturentcard resname="blue grd" cuisine="dosa" star=".1 stars" min="38minutes"/>
+
+            </div>
+        </div>
+    );
+};
+
+const AppLayout = () => {
+    return(
+        <div className="app">
+        <Header />
+        <Body />
+ </div>
+    );
+};
+
+const root =ReactDOM.createRoot(document.getElementById("root"));
+root.render(<AppLayout/>);
+
+code2:configue :backend data is changed and and reusable cards   
+
+part5?
+
+//react hooks:they are normal js utility functions.fb developper.two hooks:usestate,useEffect
+//1.usestate is use to generate paverfull state variable react.whwnever a variable state updates/changes react rerender my component
+//react hook is normal js function it give you 
+
+?how react work behind the sene?:
+>reconciliation react16 (react fiber)react18 :we have a dom. dom is tree.we have a rescontainer has 50 resturent card.react has vartualdom it is not a actual dom.
+-it has virtual dom it has div algoridham  which is  very efficient .it can do afficient dom manupelation.it find out the div and update the ui.efficiant dom manupelationit is efficiently find out the diffference beetween virtualdom and update the ui
+react fiber github 
+
+?const [listOfResturant,setlistOfResturant]=useState(resObj);trackthis and automagically change.
+>listOfResturantis(its found):react track this listOfResturantits constently monitering this bcz this is special variable.its is find the div update the ui constently.its flushout and render whatis required.
+>setlistOfResturant(its update):its rerendering page;
+>useState:i write different way it is array desructuring usestate is return a array.
+1.const arr= useState(restlist);
+ const [listOfResturant,setlistOfResturant]=arr;
+ 2.const arr= useState(restlist);
+    const listOfResturant=arr[0];
+    const setlistOfResturant=arr[1];
+
+part-6?
+Part-6:
+
+//Notes for food ordering application:
+
+1.monolith arcitechter:
+an application where all its components are tightly coupled and deployed as a single unit.entire application, regardless of its size or complexity, is built, tested, and deployed as a single, self-contained entity. itsSingle codebase,Tightly coupled components,Single deployment unit but Scalability challenges and Codebase complexity.
+
+
+
+2.microservise arcitechter
+:A microservices architecture is a design approach where an application is structured as a collection of small, independent, and loosely coupled services. Its Independent Deployability,Loosely ,CoupledAutonomy,Granularity,Faster Development and Deployment: but Increased Complexity: 
+
+
+
+
+Use Effect:  
+
+useEffect is a Hook that allows functional components to perform side effects after rendering. Side effects include data fetching, DOM manipulation, subscriptions, or setting up timers. It takes a function (the "effect") and an optional dependency array.firstly body render call and then useeffect call,
+
+ 
+import { useEffect, useState } from "react";//named imporrt
+
+
+  useEffect(()=>{
+        console.log("use effect");
+      },[]);
+
+
+
+
