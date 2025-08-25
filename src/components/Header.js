@@ -13,7 +13,7 @@ const Header = () => {
   const cartItems = useSelector((store) => store.cart.items);
 
   return (
-    <header className="bg-white shadow-md px-6 py-4 flex justify-between items-center sticky top-0 z-50">
+    <header className="bg-white shadow-md px-6 flex justify-between items-center sticky top-0 z-50">
       {/* Logo */}
       <div className="flex items-center gap-2">
         <img
@@ -46,13 +46,13 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link to="/aboutme" className="hover:text-[#733E48] transition-colors">
-              About
+            <Link to="/contactme" className="hover:text-[#733E48] transition-colors">
+              Contact
             </Link>
           </li>
           <li>
-            <Link to="/contactme" className="hover:text-[#733E48] transition-colors">
-              Contact
+            <Link to="/aboutme" className="hover:text-[#733E48] transition-colors">
+              About
             </Link>
           </li>
           <li>

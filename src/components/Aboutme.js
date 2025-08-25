@@ -1,4 +1,4 @@
-import User from "./user";
+import User from "./User";
 import Userclass from "./Userclass";
 import userContext from "../utils/userContext";
 

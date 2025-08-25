@@ -15,7 +15,7 @@ const Body2 = () => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  },[]);
 
   const fetchData = async () => {
     setlistOfResturant(mokeData);

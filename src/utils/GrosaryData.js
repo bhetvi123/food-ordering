@@ -1,7 +1,7 @@
 const GrosaryData = [
   {
     name: "Organic Basmati Rice",
-    image: "https://m.media-amazon.com/images/I/61SRn5cDiOL._SX679_.jpg",
+    image: "https://cdn11.bigcommerce.com/s-dis4vxtxtc/images/stencil/1280x1280/products/3170/4915/Organic-Basmati-Rice-White-5KG-Offset_RIBAS2.5.sq__25474.1599544391.jpg?c=2?imbypass=on",
     price: 120,
     originalPrice: 150,
     description: "Long grain, aromatic, perfect for biryani or pulao.",
@@ -11,7 +11,7 @@ const GrosaryData = [
   },
   {
     name: "Sunflower Oil - 1L",
-    image: "https://m.media-amazon.com/images/I/71VmHSc8N9L._SX679_.jpg",
+    image: "https://5.imimg.com/data5/SELLER/Default/2022/9/PE/IY/DN/65816739/1l-freedom-refined-sunflower-oil-500x500.jpg",
     price: 110,
     originalPrice: 130,
     description: "Healthy, cholesterol-free refined oil.",
@@ -21,7 +21,7 @@ const GrosaryData = [
   },
   {
     name: "Tata Tea Gold 250g",
-    image: "https://m.media-amazon.com/images/I/71Q9q6Zy2BL._SX679_.jpg",
+    image: "https://tse2.mm.bing.net/th/id/OIP.RZTJJ8gocTrqIucUMYB3YQAAAA?pid=Api&P=0&h=180",
     price: 85,
     originalPrice: 95,
     description: "Strong aroma-rich blend of Assam and long leaves.",
@@ -31,7 +31,7 @@ const GrosaryData = [
   },
   {
     name: "Amul Butter 500g",
-    image: "https://m.media-amazon.com/images/I/71WoQWMepWL._SX679_.jpg",
+    image: "https://karthika.sg/image/catalog/products/SLURRP/product-oI_VztiWqH97EnWeXAI2s-0.jpg",
     price: 220,
     originalPrice: 250,
     description: "Rich, creamy, perfect for breakfast toast.",
@@ -41,7 +41,7 @@ const GrosaryData = [
   },
   {
     name: "Chakki Atta 5kg",
-    image: "https://m.media-amazon.com/images/I/81r4UEnO7qL._SX679_.jpg",
+    image: "https://www.jiomart.com/images/product/600x600/491349659/chakki-atta-5-kg-product-images-o491349659-p491349659-0-202204281316.jpg",
     price: 225,
     originalPrice: 260,
     description: "100% whole wheat, stone ground flour.",
@@ -51,7 +51,7 @@ const GrosaryData = [
   },
   {
     name: "Himalayan Rock Salt Grinder 100g",
-    image: "https://m.media-amazon.com/images/I/71jeAf7BrmL._SX679_.jpg",
+    image: "https://5.imimg.com/data5/ECOM/Default/2022/6/LB/DC/JI/2398936/himalayanpinksaltgrinder-100g-1-1000x1000.png",
     price: 140,
     originalPrice: 160,
     description: "Pink salt with a built-in grinder, rich in minerals.",
@@ -61,7 +61,7 @@ const GrosaryData = [
   },
   {
     name: "Raw Pressery Cold Pressed Orange Juice 1L",
-    image: "https://m.media-amazon.com/images/I/61R4LdaNH+L._SX679_.jpg",
+    image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/images/products/full_screen/pro_287023.jpg?ts=1643862405",
     price: 180,
     originalPrice: 199,
     description: "Fresh, vitamin-rich juice with no added sugar.",
@@ -71,7 +71,7 @@ const GrosaryData = [
   },
   {
     name: "Kellogg's Muesli Nuts Delight 500g",
-    image: "https://m.media-amazon.com/images/I/71xU0yA3HUL._SX679_.jpg",
+    image: "https://m.media-amazon.com/images/I/81XXckaHi8L._SL1500_.jpg",
     price: 270,
     originalPrice: 310,
     description: "Wholesome cereal with almonds, raisins, and crunchy oats.",
@@ -81,7 +81,7 @@ const GrosaryData = [
   },
   {
     name: "Brookside Dark Chocolate - Blueberry 100g",
-    image: "https://m.media-amazon.com/images/I/61WYvUFiqwL._SX679_.jpg",
+    image: "https://www.snrshopping.com/upload/product_details/5fa1e8c2c9e9a_1604446402.jpg",
     price: 190,
     originalPrice: 210,
     description: "Luxury chocolate with exotic fruit center.",
@@ -91,7 +91,7 @@ const GrosaryData = [
   },
   {
     name: "Nestle A+ Slim Milk 1L",
-    image: "https://m.media-amazon.com/images/I/71KTCsE7knL._SX679_.jpg",
+    image: "https://m.media-amazon.com/images/I/717U2Jbqb+L._SL1500_.jpg",
     price: 75,
     originalPrice: 82,
     description: "Low-fat milk, ideal for fitness-focused lifestyles.",
@@ -101,7 +101,7 @@ const GrosaryData = [
   },
   {
     name: "Figaro Extra Virgin Olive Oil 500ml",
-    image: "https://m.media-amazon.com/images/I/71rkW4lDlaL._SX679_.jpg",
+    image: "https://m.media-amazon.com/images/I/71fHUkl7R2L._SL1001_.jpg",
     price: 299,
     originalPrice: 350,
     description: "Mediterranean olive oil, perfect for salads & sautéing.",
@@ -111,7 +111,7 @@ const GrosaryData = [
   },
   {
     name: "Quaker Oats 1kg",
-    image: "https://m.media-amazon.com/images/I/81aLrb4sSDL._SX679_.jpg",
+    image: "https://m.media-amazon.com/images/I/81m6APEiHoL._SL1500_.jpg",
     price: 145,
     originalPrice: 170,
     description: "Classic breakfast oats for heart health.",
@@ -121,7 +121,7 @@ const GrosaryData = [
   },
   {
     name: "Mother's Recipe Mixed Pickle 500g",
-    image: "https://m.media-amazon.com/images/I/91SzT3U2WFL._SX679_.jpg",
+    image: "http://cdn.shopify.com/s/files/1/0341/6519/4888/products/mixedpickle_1200x1200.png?v=1631130502",
     price: 110,
     originalPrice: 130,
     description: "Authentic Indian pickle with bold spices.",
@@ -131,7 +131,7 @@ const GrosaryData = [
   },
   {
     name: "24 Mantra Organic Turmeric Powder 200g",
-    image: "https://m.media-amazon.com/images/I/71KDvDJmDHL._SX679_.jpg",
+    image: "https://tse4.mm.bing.net/th/id/OIP.2_1ujwIrXWNj0UxcffgsqQHaK9?pid=Api&P=0&h=180",
     price: 85,
     originalPrice: 100,
     description: "Pure turmeric with high curcumin content.",
@@ -141,7 +141,7 @@ const GrosaryData = [
   },
   {
     name: "Urban Platter Premium Almonds 500g",
-    image: "https://m.media-amazon.com/images/I/81Ba8R97u0L._SX679_.jpg",
+    image: "https://m.media-amazon.com/images/I/61W8cJMz7bL._SL1200_.jpg",
     price: 375,
     originalPrice: 420,
     description: "Crunchy, export-quality Californian almonds.",
